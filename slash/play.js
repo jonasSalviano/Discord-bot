@@ -9,7 +9,7 @@ module.exports = {
         .setDescription("Carregando musica do Youtube")
         .addSubcommand((subcommand) =>
             subcommand
-                .setName("musica")
+                .setName("song")
                 .setDescription("Carregando a musica da url")
                 .addStringOption((option) => option.setName("url").setDescription("A musica da url").setRequired(true))
         )
@@ -87,6 +87,5 @@ module.exports = {
             embeds: [embed]
         })
     }
-
 
 }
